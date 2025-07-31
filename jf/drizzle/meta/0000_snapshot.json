@@ -1,0 +1,442 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "prevId": "",
+  "version": "6",
+  "dialect": "sqlite",
+  "tables": {
+    "article": {
+      "name": "article",
+      "columns": {
+        "id": {
+          "autoincrement": true,
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "status": {
+          "autoincrement": false,
+          "name": "status",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "type": {
+          "autoincrement": false,
+          "name": "type",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "num": {
+          "autoincrement": false,
+          "name": "num",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pnum": {
+          "autoincrement": false,
+          "name": "pnum",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "isList": {
+          "autoincrement": false,
+          "name": "isList",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "text": {
+          "autoincrement": false,
+          "name": "text",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "style": {
+          "autoincrement": false,
+          "name": "style",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ppnum": {
+          "autoincrement": false,
+          "name": "ppnum",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "fang": {
+          "autoincrement": false,
+          "name": "fang",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "text1": {
+          "autoincrement": false,
+          "name": "text1",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "isSong": {
+          "autoincrement": false,
+          "name": "isSong",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Snum": {
+          "autoincrement": false,
+          "name": "Snum",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "formula": {
+      "name": "formula",
+      "columns": {
+        "id": {
+          "autoincrement": true,
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "status": {
+          "autoincrement": false,
+          "name": "status",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "letter": {
+          "autoincrement": false,
+          "name": "letter",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "name": {
+          "autoincrement": false,
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "list": {
+          "autoincrement": false,
+          "name": "list",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "fa": {
+          "autoincrement": false,
+          "name": "fa",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "zhu": {
+          "autoincrement": false,
+          "name": "zhu",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Hname": {
+          "autoincrement": false,
+          "name": "Hname",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "zhongyao": {
+      "name": "zhongyao",
+      "columns": {
+        "id": {
+          "autoincrement": false,
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "title": {
+          "autoincrement": false,
+          "name": "title",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "content": {
+          "autoincrement": false,
+          "name": "content",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "parentId": {
+          "autoincrement": false,
+          "name": "parentId",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "h1": {
+          "autoincrement": false,
+          "name": "h1",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "children": {
+          "autoincrement": false,
+          "name": "children",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "classifyId": {
+          "autoincrement": false,
+          "name": "classifyId",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "h2": {
+          "autoincrement": false,
+          "name": "h2",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "search_fts": {
+      "name": "search_fts",
+      "columns": {
+        "source": {
+          "autoincrement": false,
+          "name": "source",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "source_id": {
+          "autoincrement": false,
+          "name": "source_id",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "text": {
+          "autoincrement": false,
+          "name": "text",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "search_fts": {
+          "autoincrement": false,
+          "name": "search_fts",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rank": {
+          "autoincrement": false,
+          "name": "rank",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "search_fts_data": {
+      "name": "search_fts_data",
+      "columns": {
+        "id": {
+          "autoincrement": false,
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "block": {
+          "autoincrement": false,
+          "name": "block",
+          "type": "blob",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "search_fts_idx": {
+      "name": "search_fts_idx",
+      "columns": {
+        "segid": {
+          "autoincrement": false,
+          "name": "segid",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "term": {
+          "autoincrement": false,
+          "name": "term",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "pgno": {
+          "autoincrement": false,
+          "name": "pgno",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {
+        "search_fts_idx_segid_term_pk": {
+          "columns": [
+            "segid",
+            "term"
+          ],
+          "name": "search_fts_idx_segid_term_pk"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "search_fts_content": {
+      "name": "search_fts_content",
+      "columns": {
+        "id": {
+          "autoincrement": false,
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "c0": {
+          "autoincrement": false,
+          "name": "c0",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "c1": {
+          "autoincrement": false,
+          "name": "c1",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "c2": {
+          "autoincrement": false,
+          "name": "c2",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "search_fts_docsize": {
+      "name": "search_fts_docsize",
+      "columns": {
+        "id": {
+          "autoincrement": false,
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "sz": {
+          "autoincrement": false,
+          "name": "sz",
+          "type": "blob",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "search_fts_config": {
+      "name": "search_fts_config",
+      "columns": {
+        "k": {
+          "autoincrement": false,
+          "name": "k",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "v": {
+          "autoincrement": false,
+          "name": "v",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    }
+  },
+  "views": {},
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}
